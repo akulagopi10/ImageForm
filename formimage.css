@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.8s linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+}
+
+body {
+    background: linear-gradient(to right, #00a9e0, #45ea45, #ffa500);
+}
+
+.pg-title {
+    text-align: center;
+    padding: 0.5rem 0;
+    color: #fff;
+}
+
+.form-ggg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 2rem auto;
+    width: 80%;
+    background-color: #252422;
+}
+
+.form-ggg .fg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.form-hdng {
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: 550;
+    color: #3772ff;
+}
+
+.login-form {
+    display: grid;
+    place-items: center;
+    padding-bottom: 3rem;
+}
+
+.login-form>div {
+    margin-bottom: 2rem;
+}
+
+.login-form div label {
+    width: 100%;
+    display: inline-block;
+    padding: 0.5rem 0rem;
+    color: #00a9e0;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.7rem 0.6rem;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+}
+
+.login-form input::placeholder {
+    color: #333;
+    padding: 0.6rem 0.4rem;
+}
+
+.login-form input:hover {
+    border: 2px solid #ffa500;
+    transition: 0.5s ease-in-out;
+}
+
+
+button {
+    background-color: #00a9e0;
+    padding: 0.8rem 0.5rem;
+    min-width: 35%;
+    border-radius: 0.5rem;
+    background-color: #ef476f;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #45ea45;
+    transition: 0.9s ease-in-out;
+}
+
+@media(max-width:767px) {
+    .form-ggg {
+        grid-template-columns: 1fr;
+        padding: 0.5rem 5%;
+        width: 90%;
+    }
+
+    .fg {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .form-ggg {
+        width: 90%;
+    }
+}
